@@ -12,6 +12,8 @@ export const HomeContainer = styled.div`
 export const TransactionContainer = styled.main`
     width: 100%;
     margin: 4rem auto 2rem;
+
+  
 `
 export const TableContainer = styled.table`
     margin-top: 1.5rem;
@@ -21,6 +23,7 @@ export const TableContainer = styled.table`
     td{
         padding: 1.25rem 2rem;
         background: ${props => props.theme["gray-700"]};
+     
         &:first-child{
             border-top-left-radius: 6px;
             border-bottom-left-radius: 6px       

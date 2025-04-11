@@ -2,27 +2,39 @@ import styled, { css } from "styled-components";
 import { RadioGroup } from "radix-ui";
 
 export const ContentForm = styled.div`
-    width: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 2rem;
+
+  form {
     display: flex;
     flex-direction: column;
-    margin-top: 2rem;
-    form{
-        display: flex;
-        flex-direction: column;
-        gap: 1rem;
-        input{
-         background-color: ${props => props.theme["gray-900"]};
-         border: 0;
-         border-radius: 6px;
-         padding: 1rem;
+    gap: 1rem;
 
-         &::placeholder{
-            color: ${props => props.theme["gray-500"]};
-         }
-        }
+    input {
+      background-color: ${(props) => props.theme["gray-900"]};
+      border: 0;
+      border-radius: 6px;
+      padding: 1rem;
+
+      &::placeholder {
+        color: ${(props) => props.theme["gray-500"]};
+      }
     }
-`
 
+    /* Remover as setinhas do input[type="number"] */
+    input[type="number"]::-webkit-outer-spin-button,
+    input[type="number"]::-webkit-inner-spin-button {
+      -webkit-appearance: none;
+      margin: 0;
+    }
+
+    input[type="number"] {
+      -moz-appearance: textfield;
+    }
+  }
+`;
 export const ButtonConfirmFormTransaction = styled.button`
     width: 100%;
     border: 0;

@@ -56,7 +56,8 @@ export const DialogContainerComponent = () => {
               {...register("description")}
             />
             <input
-              type="text"
+              type="number"
+              
               placeholder="Preço"
               {...register("price", { valueAsNumber: true })}
             />
