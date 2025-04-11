@@ -1,0 +1,36 @@
+{
+  "transactions": [
+    {
+      "description": "desenvolvimento do site",
+      "price": 1500,
+      "category": "Vendas",
+      "type": "income",
+      "createdAt": "2025-04-11T01:57:45.929Z",
+      "id": 1
+    },
+    {
+      "description": "Hamburguer do McDonalds",
+      "price": 25,
+      "category": "Alimentação",
+      "type": "outcome",
+      "createdAt": "2025-04-11T01:58:05.503Z",
+      "id": 2
+    },
+    {
+      "description": "Corte de cabelo",
+      "price": 34,
+      "category": "Auto cuidado",
+      "type": "outcome",
+      "createdAt": "2025-04-11T01:58:27.242Z",
+      "id": 3
+    },
+    {
+      "description": "Site Rocketseat ",
+      "price": 4000,
+      "category": "Vendas",
+      "type": "income",
+      "createdAt": "2025-04-11T01:59:25.682Z",
+      "id": 4
+    }
+  ]
+}
